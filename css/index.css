@@ -1,0 +1,217 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Courier New', Courier, monospace;
+}
+main{
+     height: 110vh;
+     background-color: tomato;
+}
+a{
+     text-decoration: none;
+}
+ul{
+     list-style: none;
+}
+nav{
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem;
+     background: #494949;
+}
+.navLinks{
+     display: flex;
+     
+}
+.navLinks li{
+     width: 140px;
+     text-align: center;
+     height: 50px;
+     line-height: 50px;
+     background-color:#494949;
+}
+.navLinks li a{
+     color:#fff;
+     transition: all 0.3s ease-in-out;
+}
+.navLinks > li >a:hover{
+     color:tomato;
+}
+.logo{
+     display: flex;
+     align-items: center;
+     color:#fff;
+}
+
+.logo_text{
+     height: 40px;
+     letter-spacing: -3px;
+     font-size: 2rem;
+     display: block;
+     text-align: center;
+     padding: 5px;
+}
+.logo_text.one{
+     color: #fff;
+     background-color:tomato;
+}
+.dropdown{
+     position: relative;
+     transition: all 0.4s ease-in-out;
+}
+.dropdown:hover .dropdown_content{
+     display: block;
+}
+.dropdown_content{
+     position: absolute;
+     display: none;
+     left: 0;
+}
+.dropdown_content li:hover,
+.dropdown_contentsurvey li:hover {
+     background-color: tomato;
+}
+.dropdownsurvey{
+     position: relative;
+}
+.dropdownsurvey:hover .dropdown_contentsurvey{
+     display: block;
+}
+.dropdown_contentsurvey{
+     display: none;
+     position: absolute;
+     left: 100%;
+     top: 0;
+}
+.hamburger{
+     flex-direction: column;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     display: none;
+}
+.timeBoard{
+     display: flex;
+     justify-content: center;
+     background-color: #fff;
+     padding:0 1rem;
+     gap: 1rem;
+     border-radius: 5px;
+     width: 240px;
+}
+.time_item{
+     color: #494944;
+}
+.amount{
+     display: block;
+     text-align: center;
+     background-color: #fff;
+     color: #494944;
+     font-size: 2rem;
+     font-family: 'Times New Roman', Times, serif;
+}
+.amount + span{
+     display: block;
+     text-align: center;
+     font-weight: 700;
+     letter-spacing: -2px;
+}
+.bar{
+     display: block;
+     height: 4px;
+     width: 30px;
+     background-color: #fff;
+     border-radius: 5px;
+     margin: 5px;
+}
+section{
+     height: 70vh;
+     display: grid;
+     grid-template-columns: 60% 30%;
+     gap: 6rem;
+}
+.hero{
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background:linear-gradient(to top,#494944,#49494465) ,url(../img/sunk.jpg) center center/cover;
+     color: #fff;
+     gap: 2rem;
+}
+aside{
+     background:url(../img/sunk.jpg) center center/cover;
+     padding: 20px;
+}
+aside h2{
+     color: tomato;
+     text-align: center;
+     margin-bottom: 20px;
+}
+.reports{
+     margin-bottom: 20px;
+}
+.reports h3{
+     margin: 1rem;
+     color: #fff;
+}
+.reports p{
+     color: #494944;
+}
+header > h2{
+     color: tomato;
+}
+.news_description{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+}
+.news_text{
+     text-align: center;
+     width: 50%;
+}
+.learn_more{
+     color: #fff;
+     background-color: tomato;
+     width: 120px;
+     height: 40px;
+     line-height: 45px;
+     text-align: center;
+     font-weight: 700;
+     transition: all 0.3s ease-in-out;
+}
+.learn_more:hover{
+     background-color: #494944;
+}
+footer{
+     display: flex;
+     flex-direction: column;
+     height: 30vh;
+     color: #fff;
+     text-align: center;
+}
+.footer1{
+     display: grid;
+     align-items: top;
+     justify-content: space-evenly;
+     grid-template-columns: repeat(4,1fr);
+     height: 25vh;
+     padding: 2rem;
+     background:#494944;
+}
+.footer1 h3{
+     color: tomato;
+     margin-bottom: 1rem;
+}
+.footer2{
+     height: 5vh;
+     line-height: 5vh;
+     color: #494944;
+     font-weight: 700;
+     color: tomato;
+}
