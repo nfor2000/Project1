@@ -1,4 +1,4 @@
-
+// JS FOR TIME BOARD
 x = setInterval(function(){
      let date = new Date();
 
@@ -15,4 +15,4 @@ x = setInterval(function(){
      document.querySelector(".seconds_text").innerHTML = (seconds == 1)? "second":"seconds";
 
 },1000);
-
+// END
