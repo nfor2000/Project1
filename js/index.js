@@ -47,19 +47,7 @@ if (BreakingNews.length > 0)
           const parent = document.querySelector('.news_btns');
           parent.appendChild(slideBtn)
      };
-
-     const slideBtns = Array.from(document.querySelectorAll(".slider_btn"));
-     slideBtns.forEach( Btn => {
-          Btn.addEventListener("click",function(){
-              let index = Btn.dataset.newindex;
-              newsText.innerHTML = `${BreakingNews[index]["news-text"]}`;
-              newsTitle.innerHTML = `${BreakingNews[index]["news-title"]}`;
-              document.querySelector(".hero").style.background = `linear-gradient(to top,#494944,#49494465) ,url(${BreakingNews[index]["news-image"]}) center center/cover`
-         })
-     })
-
-}
-let index = 0;
+     let index = 0;
 let y = setInterval(function(){
      
      if(index >= BreakingNews.length)
@@ -71,6 +59,23 @@ let y = setInterval(function(){
      newsTitle.innerHTML = `${BreakingNews[index]["news-title"]}`;
      index = index +1;
 },4000)
+
+     const slideBtns = Array.from(document.querySelectorAll(".slider_btn"));
+     slideBtns.forEach( Btn => {
+          Btn.addEventListener("click",function(){
+              let index = Btn.dataset.newindex;
+              newsText.innerHTML = `${BreakingNews[index]["news-text"]}`;
+              newsTitle.innerHTML = `${BreakingNews[index]["news-title"]}`;
+              document.querySelector(".hero").style.background = `linear-gradient(to top,#494944,#49494465) ,url(${BreakingNews[index]["news-image"]}) center center/cover`
+              setTimeout(()=>{
+                    
+              },4000);
+
+         })
+     })
+
+}
+
 let getParent = (element)=>{
      return element.parentElement;
 }

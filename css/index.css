@@ -153,7 +153,6 @@ section{
      color: var(--color-white);
      gap: 1.6rem;
      z-index: 0;
-     animation: animateSlider 4s infinite ;
 }
 aside{
      background-color: var(--color-white);
@@ -253,17 +252,3 @@ footer{
      font-weight: 700;
 }
 
-@keyframes animateSlider{
-     from{
-          opacity: 1;
-     }
-     55%{
-          opacity: 1;
-     }
-     80%{
-          opacity: 0.5;
-     }
-100%{
-          opacity:0.3 ;
-     }
-}
