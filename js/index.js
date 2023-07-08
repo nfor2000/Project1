@@ -48,6 +48,7 @@ if (BreakingNews.length > 0)
           parent.appendChild(slideBtn)
      };
      let index = 0;
+     // JS FOR IMAGE SLIDER 
 let y = setInterval(function(){
      
      if(index >= BreakingNews.length)
@@ -59,7 +60,7 @@ let y = setInterval(function(){
      newsTitle.innerHTML = `${BreakingNews[index]["news-title"]}`;
      index = index +1;
 },4000)
-
+     //CLICK EVENT FOR ROUND BTNS
      const slideBtns = Array.from(document.querySelectorAll(".slider_btn"));
      slideBtns.forEach( Btn => {
           Btn.addEventListener("click",function(){
