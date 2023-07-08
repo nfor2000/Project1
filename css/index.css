@@ -1,3 +1,9 @@
+:root{
+     --color-white:hsl(0,0%,100%);
+     --color-red : hsl(9, 78%, 62%);
+     --color-dark: hsl(0, 0%, 29%);
+     font-size: 20px;
+}
 *{
      margin: 0;
      padding: 0;
@@ -6,7 +12,7 @@
 }
 main{
      height: 110vh;
-     background-color: tomato;
+     background-color: var(--color-red);
 }
 a{
      text-decoration: none;
@@ -21,8 +27,8 @@ nav{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 2rem;
-     background: #494949;
+     padding: 1.6rem;
+     background: var(--color-dark);
 }
 .navLinks{
      display: flex;
@@ -33,36 +39,37 @@ nav{
      text-align: center;
      height: 50px;
      line-height: 50px;
-     background-color:#494949;
+     background-color:var(--color-dark);
 }
 .navLinks li a{
-     color:#fff;
+     color:var(--color-white);
      transition: all 0.3s ease-in-out;
 }
 .navLinks > li >a:hover{
-     color:tomato;
+     color:var(--color-red);
 }
 .logo{
      display: flex;
      align-items: center;
-     color:#fff;
+     color:var(--color-white);
 }
 
 .logo_text{
      height: 40px;
      letter-spacing: -3px;
-     font-size: 2rem;
+     font-size: 1.6rem;
      display: block;
      text-align: center;
-     padding: 5px;
+     padding: .4rem;
 }
 .logo_text.one{
-     color: #fff;
-     background-color:tomato;
+     color: var(--color-white);
+     background-color:var(--color-red);
 }
 .dropdown{
      position: relative;
      transition: all 0.4s ease-in-out;
+     z-index: 1;
 }
 .dropdown:hover .dropdown_content{
      display: block;
@@ -74,7 +81,7 @@ nav{
 }
 .dropdown_content li:hover,
 .dropdown_contentsurvey li:hover {
-     background-color: tomato;
+     background-color: var(--color-red);
 }
 .dropdownsurvey{
      position: relative;
@@ -90,28 +97,28 @@ nav{
 }
 .hamburger{
      flex-direction: column;
-     border: 1px solid #fff;
-     border-radius: 5px;
+     border: 1px solid var(--color-white);
+     border-radius: .4rem;
      display: none;
 }
 .timeBoard{
      display: flex;
      justify-content: center;
-     background-color: #fff;
+     background-color: var(--color-white);
      padding:0 1rem;
-     gap: 1rem;
+     gap: 0.8rem;
      border-radius: 5px;
      width: 240px;
 }
 .time_item{
-     color: #494944;
+     color:var(--color-dark);
 }
 .amount{
      display: block;
      text-align: center;
-     background-color: #fff;
-     color: #494944;
-     font-size: 2rem;
+     background-color: var(--color-white);
+     color:var(--color-dark);
+     font-size: 1.6rem;
      font-family: 'Times New Roman', Times, serif;
 }
 .amount + span{
@@ -124,7 +131,7 @@ nav{
      display: block;
      height: 4px;
      width: 30px;
-     background-color: #fff;
+     background-color: var(--color-white);
      border-radius: 5px;
      margin: 5px;
 }
@@ -134,39 +141,44 @@ section{
      height: 70vh;
      display: grid;
      grid-template-columns: 60% 30%;
-     gap: 6rem;
+     gap: 4.8rem;
 }
 .hero{
-     
+     position: relative;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      background:linear-gradient(to top,#494944,#49494465) ,url(../img/sunk.jpg) center center/cover;
-     color: #fff;
-     gap: 2rem;
+     color: var(--color-white);
+     gap: 1.6rem;
+     z-index: 0;
+     animation: animateSlider 4s infinite ;
 }
 aside{
-     background:url(../img/sunk.jpg) center center/cover;
-     padding: 20px;
+     background-color: var(--color-white);
+     overflow-y: scroll;
 }
 aside h2{
-     color: tomato;
+     color: var(--color-dark);
      text-align: center;
-     margin-bottom: 20px;
+     margin: 0.8rem;
 }
 .reports{
-     margin-bottom: 20px;
+     margin-bottom: 1rem;
+     border-bottom: 2px solid var(--color-red);
+     padding: 1rem 2rem;
 }
 .reports h3{
-     margin: 1rem;
-     color: #fff;
+     margin-bottom: .5rem;
+     color:var(--color-red);
 }
 .reports p{
-     color: #494944;
+     color: var(--color-dark);
+     margin-bottom: .5rem;
 }
-header > h2{
-     color: tomato;
+.hero > h2{
+     color: var(--color-red);
 }
 .news_description{
      display: flex;
@@ -179,9 +191,10 @@ header > h2{
      text-align: center;
      width: 50%;
 }
-.learn_more{
-     color: #fff;
-     background-color: tomato;
+.btn{
+     display: block;
+     color: var(--color-white);
+     background-color: var(--color-red);
      width: 120px;
      height: 40px;
      line-height: 45px;
@@ -189,14 +202,35 @@ header > h2{
      font-weight: 700;
      transition: all 0.3s ease-in-out;
 }
-.learn_more:hover{
+.btn:hover{
      background-color: #494944;
+}
+.news_btns{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     bottom: 0;
+     height: 5vh;
+     gap: .5rem;
+}
+.slider_btn{
+     width: 15px;
+     height: 15px;
+     background-color: var(--color-white);
+     border-radius: 50%;
+     border: none;
+}
+.slider_btn:hover{
+     background-color: var(--color-red);
+     cursor: pointer;
 }
 footer{
      display: flex;
      flex-direction: column;
      height: 30vh;
-     color: #fff;
+     color: var(--color-white);
      text-align: center;
 }
 .footer1{
@@ -209,13 +243,27 @@ footer{
      background:#494944;
 }
 .footer1 h3{
-     color: tomato;
+     color: var(--color-red);
      margin-bottom: 1rem;
 }
 .footer2{
      height: 5vh;
      line-height: 5vh;
-     color: #494944;
+     color: var(--color-white);
      font-weight: 700;
-     color: tomato;
+}
+
+@keyframes animateSlider{
+     from{
+          opacity: 1;
+     }
+     55%{
+          opacity: 1;
+     }
+     80%{
+          opacity: 0.5;
+     }
+100%{
+          opacity:0.3 ;
+     }
 }
