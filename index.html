@@ -1,183 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-     <main>
-          <!--                    NAVIGATION BAR              -->
-          <nav>
-               <div class="logo">
-                    <span class="logo_text">BI</span>
-                    <span class="logo_text one">TS</span>
+     <header>
+          <div class="header1">
+               <!-- DAY/TIME DISPLAY -->
+               <div class="date">
+                    <span class="amount day"></span>
+                    <span class="amount hour"></span>
+                    <span class="amount minutes"></span>
+                    <span class="amount seconds"></span>
                </div>
-               <!-- NAVIGATION LINKS WITH DROPDOWNS -->
-               <ul class="navLinks">
-                    <li>
-                         <a href="#">HOME</a>
+               <div class="logo">
+                    BITSV NEWS
+               </div>
+               <!-- LOGIN AND SIGNUP -->
+               <div class="credential">
+                    <a href="" class="login btn">Login</a>
+                    <a href="" class="signup btn">Signup</a>
+               </div>
+          </div>
+          <!-- NAVIGATIN MENU -->
+          <nav class="navbar">
+               <ul class="navmenu">
+                    <li class="navitem">
+                         <a href="#" class="navlink">HOME</a>
                     </li>
-                    <li class="dropdown">
-                         <a href="#">ABOUT</a>
+                    <li class="navitem">
+                         <a href="#" class="navlink">BOARD</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">OURSTORY</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">CONTACT</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">ARTICLE</a>
+                    </li>
+                    <!-- DROPDOWN  -->
+                    <li class="navitem dropdown">
+                         <a href="#" class="navlink">CATEGORIES</a>
                          <ul class="dropdown_content">
-                              <li>
-                                   <a href="#">BOARD</a>
+                              <li class="catitem">
+                                   <a href="" class="catlink">DISASTER</a>
                               </li>
-                              <li>
-                                   <a href="#">OURSTORY</a>
+                              <li class="catitem">
+                                   <a href="" class="catlink">CONGRESS</a>
                               </li>
-                              <li>
-                                   <a href="#">CONTACT</a>
+                              <li class="catitem">
+                                   <a href="" class="catlink">SENATE</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="" class="catlink">PRESIDENT</a>
                               </li>
                          </ul>
-                    </li>
-                    <li class="dropdown">
-                         <a href="#">NEWS</a>
-                         <ul class="dropdown_content">
-                              <li>
-                                   <a href="#">ARTICLE</a>
-                              </li>
-                              <li>
-                                   <a href="#">DISASTER</a>
-                              </li>
-                              <li class="dropdownsurvey">
-                                   <a href="#">SURVEY</a>
-                                   <ul class="dropdown_contentsurvey">
-                                        <li>
-                                             <a href="#">CONGRESS</a>
-                                        </li>
-                                        <li>
-                                             <a href="#">SENATE</a>
-                                        </li>
-                                        <li>
-                                             <a href="#">PRESIDENT</a>
-                                        </li>
-                                   </ul>
-                              </li>
-                         </ul>
-                    </li>
-                    <li>
-                         <a href="#">LOGIN</a>
-                    </li>
-                    <li>
-                         <a href="#">SIGNUP</a>
                     </li>
                </ul>
-
-               <!-- TIME DISPLAY -->
-               <div class="timeBoard">
-                    <div class="time_item">
-                         <span class="amount hours"></span>
-                         <span class="hours_text"></span>
-                    </div>
-                    <div class="time_item">
-                         <span class="amount minutes"></span>
-                         <span class="minutes_text"></span>
-                    </div>
-                    <div class="time_item">
-                         <span class="amount seconds"></span>
-                         <span class="seconds_text"></span>
-                    </div>
-               </div>
-
-               <!-- HABURGER MENU -->
+                <!-- MENU BUTTON  -->
                <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                </div>
-               <!-- END OF MENU -->
-
           </nav>
-          <!--         END OF NAVIGATION BAR        -->
+     </header>
+     <section>
 
-          
-          <section>
-               <div class="hero">
-                    <h2>BREAKING NEWS!</h2>
-                    <div class="news_description">
-                         <h2 class="news_title">Lorempisum</h2>
-                         <p class="news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis ducimus maiores aliquam adipisci accusantium officia ipsa quis beatae vel!</p>
-                         <a href="#" class="btn learn_more">READ MORE</a>
-                    </div>
-                    <div class="news_btns"></div>
-               </div>
-               <aside>
-                    <h2>TODAYS REPORTS</h2>
-                    <div class="reports">
-                         <h3>Lorem, ipsum dolor.</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod quia cum! Ratione, maxime itaque cum sunt illum ipsam quis mollitia ab repellat recusandae.</p>
-                         <a href="#" class="btn ">READ MORE</a>
-                    </div>
-                    <div class="reports">
-                         <h3>Lorem, ipsum dolor.</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod quia cum! Ratione, maxime itaque cum sunt illum ipsam quis mollitia ab repellat recusandae.</p>
-                         <a href="#" class="btn ">READ MORE</a>
-                    </div>
-               </aside>
-          </section>
-          <footer>
-               <div class="footer1">
-                    <div class="links">
-                         <h3>links</h3>
-                         <ul>
-                              <li>
-                                   <a href=""></a>
-                              </li>
-                              <li>
-                                   <a href=""></a>
-                              </li>
-                              <li>
-                                   <a href=""></a>
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="terms_policy">
-                         <h3>Terms and Policy</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque ducimus d.</p>
-                    </div>
-                    <div class="Sponsors">
-                         <h3>Our sponsors</h3>
-                         <ul>
-                              <li>
-                                   <img src="" alt="">
-                                   Lorem, ipsum.
-                              </li>
-                              <li>
-                                   <img src="" alt="">
-                                   Lorem, ipsum.
-                              </li>
-                              <li>
-                                   <img src="" alt="">
-                                   Lorem, ipsum.
-                              </li>
-                              <li>
-                                   <img src="" alt="">
-                                   Lorem, ipsum.
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="medai_links">
-                         <h3>Social</h3>
-                         <a href="#">
-                              <img src="" alt="">
-                         </a>
-                         <a href="#">
-                              <img src="" alt="">
-                         </a>
-                         <a href="#">
-                              <img src="" alt="">
-                         </a>
-                    </div>
-               </div>
-               <div class="footer2">
-                    &copy;Copyrights
-               </div>
-               
-          </footer>
-     </main>
+     </section>
      <script src="js/index.js"></script>
 </body>
+
 </html>
