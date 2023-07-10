@@ -6,6 +6,7 @@ let Days =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday
 
 let day = Date().slice(0,3);
 Days.forEach(Day => {
+     let day = Date().slice(0,3);
      if(Day.slice(0,3) == day){
           document.querySelector(".day").innerHTML = Day.toUpperCase();
      }

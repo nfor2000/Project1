@@ -1,6 +1,6 @@
 :root{
      --color-white:hsl(0,0%,100%);
-     --color-red : hsl(9, 78%, 62%);
+     --color-orange : hsl(44, 81%, 59%);
      --color-dark: hsl(0, 0%, 29%);
      --color-blue: rgb(2, 2, 43);
      font-size: 20px;
@@ -149,7 +149,86 @@ a{
      transition: all .3s ease-in-out;
 }
 
+/* END OFF HEADER */
 
+/* SECTION STYLING */
+
+section{
+     display: grid;
+     grid-template-columns:20% 55% auto;
+     padding: 2rem;
+     gap: 2rem;
+}
+section h2{
+     margin-bottom: .7rem;
+     font-size: 1rem;
+     text-align: center;
+}
+section .read_btn {
+     margin-top: .6rem ;
+}
+article{
+     border: 2px solid ;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     font-size: .8rem;
+}
+.ourStory{
+     background-color: var(--color-blue);
+     color: var(--color-white);
+     padding: 1rem;
+     font-size: .8rem;
+}
+.ourStory .read_btn{
+     background-color: var(--color-blue);
+     color: var(--color-white);
+     border: 2px solid;
+}
+article img{
+     width: 40%;
+     float: left;
+     margin: .7rem;
+}
+.container1{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 1rem;
+}
+.aside1{
+     box-shadow: 1px 2px 10px var(--color-blue);
+     padding: 1rem;
+     background-color: var(--color-blue);
+     color: var(--color-white);
+}
+.aside1 h3{
+     font-size: 1rem;
+     color: var(--color-orange);
+}
+.reports img{
+     width: 100%;
+}
+.excerpts{
+     font-size: .8rem;
+     margin: .5rem 0
+}
+.read_btn{
+     display: block;
+     color: var(--color-white);
+     background-color: var(--color-blue);
+     font-size: 0.7rem;
+     width: 100px;
+     text-align: center;
+     padding: .4rem;
+}
+.top-reports{
+     margin: 1rem 0;
+     border-bottom: 1px solid;
+}
+.top-reports img{
+     float: left;
+     width: 3rem;
+     margin-right: 1rem;
+}
 /* RESPONSIVENESS FOR MOBILE */
 
 @media screen and (max-width:760px) {
