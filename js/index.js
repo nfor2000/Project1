@@ -48,3 +48,55 @@ function closeMenu(){
      navMenu.classList.remove('active');
      hamburger.classList.remove('active');
 }
+// slider
+
+let reports = [
+     {
+          "headline":"Senatarian Elections Around the corner",
+          "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam molestiae laudantium eveniet?",
+          "image":"../img/logo.png"
+     },
+     {
+          "headline":"War in Ukraine",
+          "text":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aspernatur minima distinctio",
+          "image":"../img/sunk.jpg"
+     },
+     {
+          "headline":"AI predominance in the Tech Industry",
+          "text":"sit amet consectetur adipisicing elit. Veniam aspernatur minima distinctio",
+          "image":"../img/logo.png"
+     }
+]
+let index= 0;
+if(reports.length > 0){
+     window.addEventListener("DOMContentLoaded",()=>{
+
+          let randomIndex = generateRandomIndex();
+
+          document.querySelector(".slider .text").innerHTML = reports[randomIndex].text;
+          document.querySelector(".slider .headline").innerHTML = reports[randomIndex].headline;
+          document.querySelector(".slider").style.background = `linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(${reports[randomIndex].image}) center center/cover`;
+     })
+     for (let i = 0; i < reports.length;i++){
+
+          let sliderBtn = document.createElement("span");
+          sliderBtn.className = "slider_btn";
+          sliderBtn.setAttribute("data-index",i);
+          const parent = document.querySelector(".btns");
+          parent.appendChild(sliderBtn)
+     }
+     
+     let x = setInterval(function(){
+          if(index >= reports.length){
+               index = 0;
+          }
+          document.querySelector(".slider .text").innerHTML = reports[index].text;
+          document.querySelector(".slider .headline").innerHTML = reports[index].headline;
+          document.querySelector(".slider").style.background = `linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(${reports[index].image}) center center/cover`;
+          index++;
+     },4000)
+}
+
+function generateRandomIndex(){
+     return Math.floor(Math.random()*reports.length);
+}
