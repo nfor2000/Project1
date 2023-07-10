@@ -3,6 +3,8 @@
      --color-orange : hsl(44, 81%, 59%);
      --color-dark: hsl(0, 0%, 29%);
      --color-blue: rgb(2, 2, 43);
+     --color-darkOp: hsl(0, 0%, 29%);
+     --color-blueOp: rgba(2, 2, 43, 0.658);
      font-size: 20px;
      font-family: 'Courier New', Courier, monospace;
 }
@@ -153,13 +155,15 @@ a{
 
 /* SECTION STYLING */
 
-section{
+.section1{
      display: grid;
      grid-template-columns:20% 55% auto;
      padding: 2rem;
      gap: 2rem;
+     height: 100vh;
+     border: 1px solid;
 }
-section h2{
+.section1 h2{
      margin-bottom: .7rem;
      font-size: 1rem;
      text-align: center;
@@ -192,6 +196,7 @@ article img{
 .container1{
      display: grid;
      grid-template-columns: repeat(3,1fr);
+     grid-template-areas:"area2 area3 area4" "area area1 area1" ;
      gap: 1rem;
 }
 .aside1{
@@ -204,12 +209,24 @@ article img{
      font-size: 1rem;
      color: var(--color-orange);
 }
+.reports{
+     box-shadow: 0px 1px 10px;
+     height: 350px;
+}
 .reports img{
      width: 100%;
 }
 .excerpts{
      font-size: .8rem;
      margin: .5rem 0
+}
+.reports .excerpts{
+     margin:0 1rem;
+}
+.slider{
+     grid-area: area1;
+     background:linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(../img/sunk.jpg) center center/cover;
+     
 }
 .read_btn{
      display: block;
@@ -219,6 +236,9 @@ article img{
      width: 100px;
      text-align: center;
      padding: .4rem;
+}
+.reports .read_btn{
+     margin: 1rem 1rem ;
 }
 .top-reports{
      margin: 1rem 0;

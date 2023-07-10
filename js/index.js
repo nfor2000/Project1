@@ -21,7 +21,6 @@ y = setInterval(function () {
      let minutes = date.getMinutes();
      let seconds = date.getSeconds();
 
-
      
      document.querySelector(".hour").innerHTML = `${hour}:`;
      document.querySelector(".minutes").innerHTML = `${minutes}:`;
