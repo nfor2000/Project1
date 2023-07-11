@@ -5,6 +5,7 @@
      --color-blue: rgb(2, 2, 43);
      --color-darkOp: hsl(0, 0%, 29%);
      --color-blueOp: rgba(2, 2, 43, 0.658);
+     --transition: all 0.3s ease-in-out;
      font-size: 20px;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -67,7 +68,7 @@ a{
      width: 140px;
      padding: .3rem;
      font-size: .8rem;
-     transition: all 0.4s ease;
+     transition: var(--transition);
      border: 2px solid ;
 }
 .btn:hover{
@@ -109,7 +110,7 @@ a{
      height: 3px;
      background-color: var(--color-white);
      transform: scaleX(0);
-     transition: all 0.4s ease;
+     transition: var(--transition);
      border-radius: 10px;
 }
 .navitem:hover .navlink::after,
@@ -149,7 +150,7 @@ a{
      width: 25px;
      background-color: var(--color-white);
      margin: 5px auto;
-     transition: all .3s ease-in-out;
+     transition: var(--transition);
 }
 
 /* END OFF HEADER */
@@ -168,7 +169,7 @@ a{
      font-size: 1rem;
      text-align: center;
 }
-section .read_btn {
+.section1 .read_btn {
      margin-top: .6rem ;
 }
 article{
@@ -176,6 +177,11 @@ article{
      padding: 1rem;
      margin-bottom: 1rem;
      font-size: .8rem;
+}
+article img{
+     width: 40%;
+     float: left;
+     margin: .7rem;
 }
 .ourStory{
      background-color: var(--color-blue);
@@ -188,27 +194,32 @@ article{
      color: var(--color-white);
      border: 2px solid;
 }
-article img{
-     width: 40%;
-     float: left;
-     margin: .7rem;
-}
+
 .container1{
      display: grid;
      grid-template-columns: repeat(3,1fr);
      grid-template-areas:"area2 area3 area4" "area area1 area1" ;
      gap: 1rem;
 }
-.aside1{
-     padding: 1rem;
+.read_btn{
+     display: block;
      color: var(--color-white);
+     background-color: var(--color-blue);
+     font-size: 0.7rem;
+     width: 100px;
+     text-align: center;
+     line-height: 40px;
+     height: 40px;
+     font-weight: 700;
+     transition: var(--transition);
 }
-.aside1 h2{
-     color: var(--color-darkOp);
+.read_btn:hover{
+     background-color: var(--color-white);
+     color: var(--color-blue);
+     border: 2px solid var(--color-blue);
 }
-.aside1 h3{
-     font-size: 1rem;
-     color: var(--color-orange);
+.reports .read_btn{
+     margin:.5rem 1rem 1rem ;
 }
 .reports{
      box-shadow: 0px 1px 10px;
@@ -224,6 +235,7 @@ article img{
 .reports .excerpts{
      margin:0 1rem;
 }
+
 .slider{
      grid-area: area1;
      background:linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(../img/sunk.jpg) center center/cover;
@@ -264,20 +276,19 @@ article img{
      border-radius: 50%;
      cursor: pointer;
 }
-.read_btn{
-     display: block;
+.aside1{
+     padding: 1rem;
      color: var(--color-white);
-     background-color: var(--color-blue);
-     font-size: 0.7rem;
-     width: 100px;
-     text-align: center;
-     line-height: 40px;
-     height: 40px;
+}
+.aside1 h2{
+     color: var(--color-darkOp);
+}
+.aside1 h3{
+     font-size: 1rem;
+     color: var(--color-orange);
+}
 
-}
-.reports .read_btn{
-     margin:.5rem 1rem 1rem ;
-}
+
 .top-reports{
      margin: 1rem 0;
      border-bottom: 1px solid;
@@ -378,7 +389,7 @@ label[for=comments]{
           width: 100%;
           padding: 1rem 1rem ;
           border-top:1px solid var(--color-white);
-          transition: all 0.3s ease-in-out;
+          transition: var(--transition);
           z-index: 4;
      }
      .navitem{
