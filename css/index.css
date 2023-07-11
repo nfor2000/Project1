@@ -202,8 +202,10 @@ article img{
 .aside1{
      box-shadow: 1px 2px 10px var(--color-blue);
      padding: 1rem;
-     background-color: var(--color-blue);
      color: var(--color-white);
+}
+.aside1 h2{
+     color: var(--color-darkOp);
 }
 .aside1 h3{
      font-size: 1rem;
@@ -280,12 +282,11 @@ article img{
 .top-reports{
      margin: 1rem 0;
      border-bottom: 1px solid;
+     background-color: var(--color-blue);
+     padding: 1rem 2rem;
+     border-radius: 1rem;
 }
-.top-reports img{
-     float: left;
-     width: 3rem;
-     margin-right: 1rem;
-}
+
 .credential1{
      display: none;
 }
@@ -436,6 +437,9 @@ label[for=comments]{
      }
      .aside1{
           grid-area: none;
+     }
+     .top-reports{
+          padding: 1rem;
      }
      .credential1{
           display: flex;
