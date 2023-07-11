@@ -93,8 +93,29 @@ if(reports.length > 0){
           document.querySelector(".slider .text").innerHTML = reports[index].text;
           document.querySelector(".slider .headline").innerHTML = reports[index].headline;
           document.querySelector(".slider").style.background = `linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(${reports[index].image}) center center/cover`;
+          slideBtns.forEach(btn => {
+               btn.style.backgroundColor = "#fff";
+          })
+          slideBtns[index].style.backgroundColor = "hsl(44, 81%, 59%)"
           index++;
      },4000)
+
+     const slideBtns = Array.from(document.querySelectorAll(".slider_btn"));
+     slideBtns.forEach(btn => {
+               btn.addEventListener("click",function(){
+               let indx = btn.dataset.index;
+               console.log(indx);
+               
+               document.querySelector(".slider .text").innerHTML = reports[indx].text;
+               document.querySelector(".slider .headline").innerHTML = reports[indx].headline;
+               document.querySelector(".slider").style.background = `linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(${reports[indx].image}) center center/cover`;
+               
+               slideBtns.forEach(btn => {
+                    btn.style.backgroundColor = "#fff";
+               })
+               this.style.backgroundColor = "hsl(44, 81%, 59%)"
+          })
+     })
 }
 
 function generateRandomIndex(){
