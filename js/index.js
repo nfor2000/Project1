@@ -4,7 +4,7 @@ let Days =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday
 
 //JS FOR DAY DISPLAY
 
-let day = Date().slice(0,3);
+
 Days.forEach(Day => {
      let day = Date().slice(0,3);
      if(Day.slice(0,3) == day){
@@ -104,7 +104,6 @@ if(reports.length > 0){
      slideBtns.forEach(btn => {
                btn.addEventListener("click",function(){
                let indx = btn.dataset.index;
-               console.log(indx);
                
                document.querySelector(".slider .text").innerHTML = reports[indx].text;
                document.querySelector(".slider .headline").innerHTML = reports[indx].headline;

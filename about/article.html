@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../css/index.css">
+     <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+     <header>
+          <div class="header1">
+               <!-- DAY/TIME DISPLAY -->
+               <div class="date">
+                    <span class="amount day"></span>
+                    <span class="amount hour"></span>
+                    <span class="amount minutes"></span>
+                    <span class="amount seconds"></span>
+               </div>
+               <div class="logo">
+                    BITSV NEWS
+               </div>
+               <!-- LOGIN AND SIGNUP -->
+               <div class="credential">
+                    <a href="" class="login btn">Login</a>
+                    <a href="" class="signup btn">Signup</a>
+               </div>
+          </div>
+          <!-- NAVIGATIN MENU -->
+          <nav class="navbar">
+               <ul class="navmenu">
+                    <li class="navitem">
+                         <a href="../index.html" class="navlink">HOME</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">BOARD</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">OURSTORY</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="#" class="navlink">CONTACT</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="article.html" class="navlink">ARTICLE</a>
+                    </li>
+                    <!-- DROPDOWN  -->
+                    <li class="navitem dropdown">
+                         <a href="#" class="navlink">CATEGORIES</a>
+                         <ul class="dropdown_content">
+                              <li class="catitem">
+                                   <a href="" class="catlink">DISASTER</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="" class="catlink">CONGRESS</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="" class="catlink">SENATE</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="" class="catlink">PRESIDENT</a>
+                              </li>
+                         </ul>
+                    </li>
+               </ul>
+                <!-- MENU BUTTON  -->
+               <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+               </div>
+          </nav>
+     </header>
+     <div class="Container">
+          <main>
+               <div class="articleMenu">
+                    <img src="../img/icon-cart.svg" alt="">
+                    <div class="articleCount"></div>
+               </div>
+               <div class="image"></div>
+              <h2 class="topic"></h2>
+              <p class="articleText"></p>
+          </main>
+          <aside>
+               <div> 
+                    <h2>ARTICLES</h2>
+                    <div class="close">&times;</div>
+               </div>
+
+          </aside>
+     </div>
+     <script src="../js/article.js"></script>
+     <script src="../js/index.js"></script>
+</body>
+</html>
