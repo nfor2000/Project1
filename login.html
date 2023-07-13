@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header>
+		<div class="header1">
+			<!-- DAY/TIME DISPLAY -->
+			<div class="date">
+				<span class="amount day"></span>
+				<span class="amount hour"></span>
+				<span class="amount minutes"></span>
+				<span class="amount seconds"></span>
+			</div>
+			<div class="logo">
+				BITSV NEWS
+			</div>
+			<!-- LOGIN AND SIGNUP -->
+			<div class="credential">
+				<a href="login.html" class="login btn">Login</a>
+				<a href="signup.html" class="signup btn">Signup</a>
+			</div>
+		</div>
+		<!-- NAVIGATIN MENU -->
+		<nav class="navbar">
+			<ul class="navmenu">
+				<li class="navitem">
+					<a href="index.html" class="navlink">HOME</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="navlink">BOARD</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="navlink">OURSTORY</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="navlink">CONTACT</a>
+				</li>
+				<li class="navitem">
+					<a href="about/article.html" class="navlink">ARTICLE</a>
+				</li>
+				<!-- DROPDOWN  -->
+				<li class="navitem dropdown">
+					<a href="#" class="navlink">CATEGORIES</a>
+					<ul class="dropdown_content">
+						<li class="catitem">
+							<a href="" class="catlink">DISASTER</a>
+						</li>
+						<li class="catitem">
+							<a href="" class="catlink">CONGRESS</a>
+						</li>
+						<li class="catitem">
+							<a href="" class="catlink">SENATE</a>
+						</li>
+						<li class="catitem">
+							<a href="" class="catlink">PRESIDENT</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- MENU BUTTON  -->
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<form class="formContainer">
+			<h2>log in</h2>
+
+			<div class="row">
+				<input type="text" name="Email or username" id="email_or_username" placeholder="Email or username"
+					required><br>
+			</div>
+
+			<div class="row">
+				<input type="text" name="password" id="password" placeholder="password" required<br>
+				<div>
+
+					<div class="row">
+						<input type="submit" value="Log in">
+
+					</div>
+
+					<div class="row">
+						<p>___________or___________</p>
+					</div>
+
+					<div class="row">
+						<button type="btn"><a href="#"></a>Continue With Google</button>
+					</div>
+
+					<div class="row">
+						<button type="btn"><a href="#"></a>Continue With apple</button>
+					</div>
+
+
+					<div class="row" id="text">
+						<p>Don't have an account</p>
+						<a target="_blank" href="signup.html">SIGN UP</a></br>
+					</div>
+		</form>
+
+		</div>
+	</main>
+
+	<script src="js/index.js"></script>r
+</body>
+
+</html>

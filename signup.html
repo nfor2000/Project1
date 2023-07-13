@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/signup.css">
+   <link rel="stylesheet" href="css/index.css">
+   <title>Sign up</title>
+</head>
+
+<body>
+   <header>
+      <div class="header1">
+         <!-- DAY/TIME DISPLAY -->
+         <div class="date">
+            <span class="amount day"></span>
+            <span class="amount hour"></span>
+            <span class="amount minutes"></span>
+            <span class="amount seconds"></span>
+         </div>
+         <div class="logo">
+            BITSV NEWS
+         </div>
+         <!-- LOGIN AND SIGNUP -->
+         <div class="credential">
+            <a href="login.html" class="login btn">Login</a>
+            <a href="signup.html" class="signup btn">Signup</a>
+         </div>
+      </div>
+      <!-- NAVIGATIN MENU -->
+      <nav class="navbar">
+         <ul class="navmenu">
+            <li class="navitem">
+               <a href="index.html" class="navlink">HOME</a>
+            </li>
+            <li class="navitem">
+               <a href="#" class="navlink">BOARD</a>
+            </li>
+            <li class="navitem">
+               <a href="#" class="navlink">OURSTORY</a>
+            </li>
+            <li class="navitem">
+               <a href="#" class="navlink">CONTACT</a>
+            </li>
+            <li class="navitem">
+               <a href="about/article.html" class="navlink">ARTICLE</a>
+            </li>
+            <!-- DROPDOWN  -->
+            <li class="navitem dropdown">
+               <a href="#" class="navlink">CATEGORIES</a>
+               <ul class="dropdown_content">
+                  <li class="catitem">
+                     <a href="" class="catlink">DISASTER</a>
+                  </li>
+                  <li class="catitem">
+                     <a href="" class="catlink">CONGRESS</a>
+                  </li>
+                  <li class="catitem">
+                     <a href="" class="catlink">SENATE</a>
+                  </li>
+                  <li class="catitem">
+                     <a href="" class="catlink">PRESIDENT</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <!-- MENU BUTTON  -->
+         <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <div class="formContainer">
+
+         <h1>Register</h1>
+
+         <form action="index.html">
+
+            <div class="form-box">
+               <label for="user-name">UserName</label>
+               <input type="text" id="user-name" required>
+            </div>
+
+            <div class="form-box">
+               <label for="email">Email</label>
+               <input type="email" id="emmail" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-box">
+               <label for="password">Password</label>
+               <input type="password" id="password" required>
+            </div>
+
+            <div class="form-box">
+               <label for="confirm-password">Confirm Password</label>
+               <input type="password" id="confirm-password" required>
+            </div>
+
+            <input type="submit" value="signup">
+
+         </form>
+
+      </div>
+   </main>
+   <script src="js/index.js"></script>
+   <script>
+      console.log();
+      const Password1 = document.getElementById("password");
+      const Password2 = document.getElementById("confirm-password");
+
+      document.querySelector("form").addEventListener("submit", (e) => {
+         e.preventDefault;
+         if (Password1.value === Password2.value) {
+            window.location("index.html")
+         }
+         else {
+            document.write("invalid password");
+         }
+      })
+
+   </script>
+</body>
+
+</html>
