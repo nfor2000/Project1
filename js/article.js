@@ -18,7 +18,7 @@ let articles = [
 
 
 if (articles.length > 0) {
-     window.addEventListener("DOMContentLoaded",()=>{
+     window.addEventListener("DOMContentLoaded", () => {
 
           let randomIndex = generateRandomIndex();
 
@@ -47,10 +47,11 @@ if (articles.length > 0) {
                document.querySelector(".topic").innerHTML = `${articles[index].topic}`
 
                document.querySelector(".articleText").innerHTML = `${articles[index].text}`
-               element.addEventListener("click", function () {
+               if (document.querySelector("aside").className === "active1") {
                     document.querySelector("aside").classList.remove("active1")
-               })
-               AsideArticle.forEach(arti=>{
+               }
+
+               AsideArticle.forEach(arti => {
                     arti.style.borderColor = "#fff"
                })
                this.style.borderColor = "var(--color-orange)"
@@ -65,6 +66,6 @@ document.querySelector(".close").addEventListener("click", function () {
      document.querySelector("aside").classList.remove("active1")
 })
 
-function generateRandomIndex(){
-     return Math.floor(Math.random()*articles.length);
+function generateRandomIndex() {
+     return Math.floor(Math.random() * articles.length);
 }
