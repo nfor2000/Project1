@@ -58,6 +58,7 @@ if(reports.length > 0){
                document.querySelector(".slider .headline").innerHTML = reports[indx].headline;
                document.querySelector(".slider").style.background = `linear-gradient(to top,var(--color-blueOp),var(--color-darkOp)) ,url(${reports[indx].image}) center center/cover`;
                
+               
                slideBtns.forEach(btn => {
                     btn.style.backgroundColor = "#fff";
                })

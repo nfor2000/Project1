@@ -33,6 +33,7 @@ section > p{
      color: var(--color-blue);
      padding: 2rem;
      border-radius: 5px;
+     height: 600px;
 }
 .avatar{
      width: 100px;
@@ -50,6 +51,9 @@ section > p{
 }
 .buttons .btn{
      width: 50px;
+}
+.btn{
+     border-radius: 5px;
 }
 
 @media screen and (max-width:768px) {

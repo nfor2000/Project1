@@ -7,12 +7,13 @@
 }
 main{
 	display: flex;
-	height: 100vh;
+	height: 90vh;
 	padding: 10px;
+	background:linear-gradient(to top, var(--color-blue),var(--color-white));
 }
 .formContainer{
 	width: 100%;
-	background-color: #01061b;
+	background-color:var(--color-blue);
 	max-width: 360px;
 	margin:auto auto;
 	padding: 40px;
@@ -31,18 +32,18 @@ form{
 input{
 	width: 100%;
 	font-size: 20px;
-	color: #02010c;
+	color: var(--color-blue);
 	padding:6px 12px;
 	margin-top: 5px;
 	outline: none;
 }
 input[type=submit]{
 	color: #fff;
-	background-color: #02010c;
+	background-color: var(--color-blue);
 	border: 2px solid;
 }
 input[type=submit]:hover{
-	color: #02010c;
+	color: var(--color-blue);
 	background-color: #fff;
 	transition: all 0.5s ease;
 	cursor: pointer;

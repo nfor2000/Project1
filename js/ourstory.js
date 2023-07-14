@@ -8,19 +8,19 @@ let testimony = [
      {
           "name":"Carrick",
           "position":"position2",
-          "testimony":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eum aliquam dolorem pariatur! At ducimus impedit reiciendis et illo cupiditate totam quae voluptas, cum dignissimos accusamus neque facilis voluptates officia nemo tempora iste voluptate ex quod laudantium dolor molestiae libero quis. Voluptatem, nulla suscipit?",
+          "testimony":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto, obcaecati unde impedit explicabo quis dicta amet dolorem deserunt praesentium molestias eaque facilis earum numquam adipisci et dolores excepturi nulla dolorum doloribus odit, non provident. Sequi, corporis iure molestiae architecto et esse nihil sit voluptatibus.",
           "image":"../img/profile-2.jpg"
      },
      {
           "name":"Alicia",
           "position":"position3",
-          "testimony":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eum aliquam dolorem pariatur! At ducimus impedit reiciendis et illo cupiditate totam quae voluptas, cum dignissimos accusamus neque facilis voluptates officia nemo tempora iste voluptate ex quod laudantium dolor molestiae libero quis. Voluptatem, nulla suscipit?",
+          "testimony":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique labore, neque perferendis sunt quos delectus quasi earum tempora autem ab officia laboriosam omnis itaque blanditiis nobis fugit vero libero corrupti consequatur soluta exercitationem ad? Reiciendis, similique architecto quasi culpa earum laudantium eius deleniti doloribus delectus?",
           "image":"../img/profile-3.jpg"
      },
      {
           "name":"Kelly",
           "position":"position4",
-          "testimony":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eum aliquam dolorem pariatur! At ducimus impedit reiciendis et illo cupiditate totam quae voluptas, cum dignissimos accusamus neque facilis voluptates officia nemo tempora iste voluptate ex quod laudantium dolor molestiae libero quis. Voluptatem, nulla suscipit?",
+          "testimony":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime est hic incidunt consequuntur aperiam. Exercitationem eos, corporis qui iure at consectetur ullam modi nesciunt fugit perferendis libero incidunt, fugiat quidem aliquid distinctio a accusamus animi molestiae placeat! Aliquam harum cumque maxime nemo? Quia, temporibus numquam.",
           "image":"../img/profile-4.jpg"
      }
      
