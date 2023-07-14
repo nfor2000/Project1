@@ -1,0 +1,35 @@
+h1{
+    font-size: 40px;
+    font-weight: 25px;
+    text-align: center;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-blue);
+    color: var(--color-white);
+    gap: 1rem;
+    border-top: 1px solid;
+}
+main > div{
+    width: 100%;
+    max-width: 80%;
+}
+img{
+    height: 400px;
+    border:10px solid ;
+    max-width: 600px;
+    margin:0 auto;
+    display: block;
+}
+.p1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.p2{
+   font-size: 15px;
+}

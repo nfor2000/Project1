@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+	height: 100vh;
+	padding: 10px;
+
+}
+.topics{
+    width: 100%;
+	background-color: #01061b;
+	max-width: 360px;
+	margin:auto auto;
+	padding: 40px;
+	border-radius: 5px;
+}
+.topic-image{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}

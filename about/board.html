@@ -1,245 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board</title>
-    <link rel="stylesheet" href="../css/board.css">
-    <link rel="stylesheet" href="../css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board</title>
+  <link rel="stylesheet" href="../css/board.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
   <header>
     <div class="header1">
-         <!-- DAY/TIME DISPLAY -->
-         <div class="date">
-              <span class="amount day"></span>
-              <span class="amount hour"></span>
-              <span class="amount minutes"></span>
-              <span class="amount seconds"></span>
-         </div>
-         <div class="logo">
-              BITSV NEWS
-         </div>
-         <!-- LOGIN AND SIGNUP -->
-         <div class="credential">
-              <a href="../login.html" class="login btn">Login</a>
-              <a href="../signup.html" class="signup btn">Signup</a>
-         </div>
+      <!-- DAY/TIME DISPLAY -->
+      <div class="date">
+        <span class="amount day"></span>
+        <span class="amount hour"></span>
+        <span class="amount minutes"></span>
+        <span class="amount seconds"></span>
+      </div>
+      <div class="logo">
+        BITSV NEWS
+      </div>
+      <!-- LOGIN AND SIGNUP -->
+      <div class="credential">
+        <a href="../login.html" class="login btn">Login</a>
+        <a href="../signup.html" class="signup btn">Signup</a>
+      </div>
     </div>
     <!-- NAVIGATIN MENU -->
     <nav class="navbar">
-         <ul class="navmenu">
-              <li class="navitem">
-                   <a href="../index.html" class="navlink">HOME</a>
-              </li>
-              <li class="navitem">
-                   <a href="#" class="navlink">BOARD</a>
-              </li>
-              <li class="navitem">
-                   <a href="ourstory.html" class="navlink">OURSTORY</a>
-              </li>
-              <li class="navitem">
-                   <a href="contact.html" class="navlink">CONTACT</a>
-              </li>
-              <li class="navitem">
-                   <a href="article.html" class="navlink">ARTICLE</a>
-              </li>
-              <!-- DROPDOWN  -->
-              <li class="navitem dropdown">
-                   <a href="#" class="navlink">CATEGORIES</a>
-                   <ul class="dropdown_content">
-                        <li class="catitem">
-                             <a href="" class="catlink">DISASTER</a>
-                        </li>
-                        <li class="catitem">
-                             <a href="" class="catlink">CONGRESS</a>
-                        </li>
-                        <li class="catitem">
-                             <a href="" class="catlink">SENATE</a>
-                        </li>
-                        <li class="catitem">
-                             <a href="" class="catlink">PRESIDENT</a>
-                        </li>
-                   </ul>
-              </li>
-         </ul>
-          <!-- MENU BUTTON  -->
-         <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-         </div>
-    </nav>
-</header>
-    <div class="dashboardMenu">
-      <img src="../img/icon-menu.svg" alt="" class="dashOpen">
-    </div>
-    <div class="container">
-        <aside>
-          <div class="closeDash">&times;</div>
-          <ul>
-            <li><a href="#" class="logo">
-              <img src="../img/logo.png">
-              <span class="nav-item">Admin</span>
-            </a></li>
-            <li><a href="#">
-              <i class="fas fa-menorah"></i>
-              <span class="nav-item">Dashboard</span>
-            </a></li>
-            <li><a href="#">
-              <i class="fas fa-comment"></i>
-              <span class="nav-item">Message</span>
-            </a></li>
-            <li><a href="#">
-              <i class="fas fa-database"></i>
-              <span class="nav-item">Report</span>
-            </a></li>
-            <li><a href="#">
-              <i class="fas fa-chart-bar"></i>
-              <span class="nav-item">Attendance</span>
-            </a></li>
-            <li><a href="#">
-              <i class="fas fa-cog"></i>
-              <span class="nav-item">Setting</span>
-            </a></li>
-    
-            <li><a href="#" class="logout">
-              <i class="fas fa-sign-out-alt"></i>
-              <span class="nav-item">Log out</span>
-            </a></li>
+      <ul class="navmenu">
+        <li class="navitem">
+          <a href="../index.html" class="navlink">HOME</a>
+        </li>
+        <li class="navitem">
+          <a href="#" class="navlink">BOARD</a>
+        </li>
+        <li class="navitem">
+          <a href="ourstory.html" class="navlink">OURSTORY</a>
+        </li>
+        <li class="navitem">
+          <a href="contact.html" class="navlink">CONTACT</a>
+        </li>
+        <li class="navitem">
+          <a href="article.html" class="navlink">ARTICLE</a>
+        </li>
+        <!-- DROPDOWN  -->
+        <li class="navitem dropdown">
+          <a href="#" class="navlink">CATEGORIES</a>
+          <ul class="dropdown_content">
+            <li class="catitem">
+              <a href="../news/disaster.html" class="catlink">DISASTER</a>
+            </li>
+            <li class="catitem">
+              <a href="../news/survey/congress.html" class="catlink">CONGRESS</a>
+            </li>
+            <li class="catitem">
+              <a href="../news/survey/senate.html" class="catlink">SENATE</a>
+            </li>
+            <li class="catitem">
+              <a href="../news/survey/president.html" class="catlink">PRESIDENT</a>
+            </li>
           </ul>
-        </aside>
-    
-    
-        <section class="main">
-          <div class="main-top">
-            <h1>Attendance</h1>
-            <i class="fas fa-user-cog"></i>
-          </div>
-          <div class="users">
-            <div class="card">
-              <img src="../img/profile-1.jpg">
-              <h4>Sam David</h4>
-              <p>Ui designer</p>
-              <div class="per">
-                <table>
-                  <tr>
-                    <td><span>85%</span></td>
-                    <td><span>87%</span></td>
-                  </tr>
-                  <tr>
-                    <td>Month</td>
-                    <td>Year</td>
-                  </tr>
-                </table>
-              </div>
-              <button>Profile</button>
-            </div>
-            <div class="card">
-              <img src="../img/profile-2.jpg">
-              <h4>Balbina kherr</h4>
-              <p>Progammer</p>
-              <div class="per">
-                <table>
-                  <tr>
-                    <td><span>82%</span></td>
-                    <td><span>85%</span></td>
-                  </tr>
-                  <tr>
-                    <td>Month</td>
-                    <td>Year</td>
-                  </tr>
-                </table>
-              </div>
-              <button>Profile</button>
-            </div>
-            <div class="card">
-              <img src="../img/profile-3.jpg">
-              <h4>Badan John</h4>
-              <p>tester</p>
-              <div class="per">
-                <table>
-                  <tr>
-                    <td><span>94%</span></td>
-                    <td><span>92%</span></td>
-                  </tr>
-                  <tr>
-                    <td>Month</td>
-                    <td>Year</td>
-                  </tr>
-                </table>
-              </div>
-              <button>Profile</button>
-            </div>
-            <div class="card">
-              <img src="../img/profile-4.jpg">
-              <h4>Salina micheal</h4>
-              <p>Ui designer</p>
-              <div class="per">
-                <table>
-                  <tr>
-                    <td><span>85%</span></td>
-                    <td><span>82%</span></td>
-                  </tr>
-                  <tr>
-                    <td>Month</td>
-                    <td>Year</td>
-                  </tr>
-                </table>
-              </div>
-              <button>Profile</button>
-            </div>
-          </div>
-    
-          <section class="attendance">
-            <div class="attendance-list">
-              <h1>Attendance List</h1>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Depart</th>
-                    <th>Date</th>
-                    <th>Join Time</th>
-                    <th>Logout Time</th>
+        </li>
+      </ul>
+      <!-- MENU BUTTON  -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="dashboardMenu">
+    <img src="../img/icon-menu.svg" alt="" class="dashOpen">
+  </div>
+  <div class="container">
+    <aside>
+      <div class="closeDash">&times;</div>
+      <ul>
+        <li><a href="#" class="logo">
+            <img src="../img/logo.png">
+            <span class="nav-item">Admin</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-menorah"></i>
+            <span class="nav-item">Dashboard</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-comment"></i>
+            <span class="nav-item">Message</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-database"></i>
+            <span class="nav-item">Report</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">Attendance</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="nav-item">Setting</span>
+          </a></li>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01</td>
-                    <td>Sam David</td>
-                    <td>Design</td>
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  <tr class="active">
-                    <td>02</td>
-                    <td>Balbina Kherr</td>
-                    <td>Coding</td>
-                    <td>03-24-22</td>
-                    <td>9:00AM</td>
-                    <td>4:00PM</td>
-                  </tr>
-                  <tr>
-                    <td>03</td>
-                    <td>Badan John</td>
-                    <td>testing</td>
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  <tr>
-                    <td>04</td>
-                    <td>Sara David</td>
-                    <td>Design</td>
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  <!-- <tr >
+        <li><a href="#" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Log out</span>
+          </a></li>
+      </ul>
+    </aside>
+
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Attendance</h1>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      <div class="users">
+        <div class="card">
+          <img src="../img/profile-1.jpg">
+          <h4>Sam David</h4>
+          <p>Ui designer</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>87%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table>
+          </div>
+          <button>Profile</button>
+        </div>
+        <div class="card">
+          <img src="../img/profile-2.jpg">
+          <h4>Balbina kherr</h4>
+          <p>Progammer</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>82%</span></td>
+                <td><span>85%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table>
+          </div>
+          <button>Profile</button>
+        </div>
+        <div class="card">
+          <img src="../img/profile-3.jpg">
+          <h4>Badan John</h4>
+          <p>tester</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>94%</span></td>
+                <td><span>92%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table>
+          </div>
+          <button>Profile</button>
+        </div>
+        <div class="card">
+          <img src="../img/profile-4.jpg">
+          <h4>Salina micheal</h4>
+          <p>Ui designer</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>82%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table>
+          </div>
+          <button>Profile</button>
+        </div>
+      </div>
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Attendance List</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Depart</th>
+                <th>Date</th>
+                <th>Join Time</th>
+                <th>Logout Time</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Sam David</td>
+                <td>Design</td>
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td>Balbina Kherr</td>
+                <td>Coding</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Badan John</td>
+                <td>testing</td>
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>Sara David</td>
+                <td>Design</td>
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+              <!-- <tr >
                     <td>05</td>
                     <td>Salina</td>
                     <td>Coding</td>
@@ -257,89 +259,90 @@
                     <td>4:00PM</td>
                     <td><button>View</button></td>
                   </tr> -->
-                </tbody>
-              </table>
-            </div>
-            <div class="attendance-list1">
-              <h1>Attendance List</h1>
-             
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Depart</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01</td>
-                    <td>Sam David</td>
-                    <td>Design</td>
-                  </tr>
-                  <tr class="active">
-                    <td>02</td>
-                    <td>Balbina Kherr</td>
-                    <td>Coding</td>
-                  </tr>
-                  <tr>
-                    <td>03</td>
-                    <td>Badan John</td>
-                    <td>testing</td>
-                  </tr>
-                  <tr>
-                    <td>04</td>
-                    <td>Sara David</td>
-                    <td>Design</td>
-                  </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="attendance-list1">
+          <h1>Attendance List</h1>
 
-              </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Depart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Sam David</td>
+                <td>Design</td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td>Balbina Kherr</td>
+                <td>Coding</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Badan John</td>
+                <td>testing</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>Sara David</td>
+                <td>Design</td>
+              </tr>
 
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Join Time</th>
-                    <th>Logout Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  <tr class="active">
-                    
-                    <td>03-24-22</td>
-                    <td>9:00AM</td>
-                    <td>4:00PM</td>
-                  </tr>
-                  <tr>
-                    
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  <tr>
-                    
-                    <td>03-24-22</td>
-                    <td>8:00AM</td>
-                    <td>3:00PM</td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </section>
-        
-      </div>
-      <div class="credential1">
-        <a href="../login.html" class="login btn">Login</a>
-        <a href="../signup.html" class="signup btn">Signup</a>
-   </div>
-      <script src="../js/board.js"></script>
-      <script src="../js/index.js"></script>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Join Time</th>
+                <th>Logout Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+              <tr class="active">
+
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+              </tr>
+              <tr>
+
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+              <tr>
+
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+  </div>
+  <div class="credential1">
+    <a href="../login.html" class="login btn">Login</a>
+    <a href="../signup.html" class="signup btn">Signup</a>
+  </div>
+  <script src="../js/board.js"></script>
+  <script src="../js/index.js"></script>
 </body>
+
 </html>
