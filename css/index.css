@@ -393,7 +393,7 @@ footer p{
      
      .navmenu{
           position: absolute;
-          height: 100vh;
+          height: 100%;
           left: -100%;
           top: 5vh;
           background-color: var(--color-blue);
