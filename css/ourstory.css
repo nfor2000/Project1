@@ -1,0 +1,63 @@
+section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 2rem;
+     background:linear-gradient(to top, var(--color-blue),var(--color-white));
+     color: var(--color-blue);
+}
+section >h2{
+     font-size: 2rem;
+     margin-bottom: .2rem;
+}
+section > p{
+     margin-bottom: 1rem;
+}
+.underline{
+     display: block;
+     height: 5px;
+     width: 10rem;
+     background-color: var(--color-blue);
+     margin-bottom: 1rem;
+     border-radius: 5px;
+}
+.testimonials{
+     width: 100%;
+     max-width: 410px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: .5rem;
+     align-items: center;
+     background-color: var(--color-white);
+     color: var(--color-blue);
+     padding: 2rem;
+     border-radius: 5px;
+}
+.avatar{
+     width: 100px;
+     border-right: 5px solid ;
+     border-radius: 50%;
+}
+.testimony{
+     text-align: center;
+}
+.buttons{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.buttons .btn{
+     width: 50px;
+}
+
+@media screen and (max-width:768px) {
+     section{
+          padding: 1rem;
+     }
+     .testimonials{
+          padding:1rem .7rem ;
+          height: auto;
+     }
+}
