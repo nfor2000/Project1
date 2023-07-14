@@ -34,10 +34,9 @@ y = setInterval(function () {
 const navMenu = document.querySelector(".navmenu");
 const navLinks = document.querySelectorAll(".navlink");
 const hamburger = document.querySelector(".hamburger");
-
-// navLinks.forEach(link=>{
-//    link.addEventListener("click",closeMenu)  
-// })
+navLinks.forEach(link=>{
+   link.addEventListener("click",closeMenu)  
+})
 hamburger.addEventListener("click",OpenMenu)
 
 function OpenMenu(){
