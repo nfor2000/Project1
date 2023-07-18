@@ -195,11 +195,6 @@ article img{
      border: 2px solid;
 }
 
-.container1{
-     display: grid;
-     grid-template-columns: repeat(2,1fr);
-     gap: 1rem;
-}
 .read_btn{
      display: block;
      color: var(--color-white);
@@ -217,21 +212,10 @@ article img{
      color: var(--color-blue);
      border: 2px solid var(--color-blue);
 }
-.reports .read_btn{
-     margin:.5rem 1rem 1rem ;
-}
-.reports{
-     box-shadow: 0px 1px 10px;
-}
-.reports img{
-     width: 100%;
-}
+
 .excerpts{
      font-size: .8rem;
      margin: .5rem 0
-}
-.reports .excerpts{
-     margin:0 1rem;
 }
 
 .slider{
@@ -275,7 +259,6 @@ article img{
      cursor: pointer;
 }
 .aside1{
-     padding: 1rem;
      color: var(--color-white);
 }
 .aside1 h2{
@@ -285,7 +268,6 @@ article img{
      font-size: 1rem;
      color: var(--color-orange);
 }
-
 
 .top-reports{
      margin: 1rem 0;
