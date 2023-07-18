@@ -5,6 +5,9 @@
 	color:#fff;
 	font-family: Arial, Helvetica, sans-serif;
 }
+button a{
+	text-decoration: underline;
+}
 main{
 	display: flex;
 	height: 90vh;
@@ -32,6 +35,9 @@ h2{
 	margin-bottom: 20px;
 
 }
+.row{
+	position: relative;
+}
 input{
 	width: 100%;
 	font-size: 17px;
@@ -45,11 +51,23 @@ input[type=submit]{
 	color: #fff;
 	background-color: var(--color-blue);
 	border: 2px solid;
+	margin-bottom: .4rem;
+}
+.forgotpass{
+	font-size: .6rem;
+	text-decoration: underline;
 }
 input[type=submit]:hover{
 	color: var(--color-blue);
 	background-color: #fff;
 	transition: all 0.5s ease;
+	cursor: pointer;
+}
+input + i.bi{
+	position: absolute;
+	top: 12px;
+	right: .7rem;
+	color: var(--color-blue);
 	cursor: pointer;
 }
 button{
@@ -62,11 +80,21 @@ button{
 	border: 2px solid;
 
 }
-button[type=btn]:hover{color: var(--color-blue);
+button i{
+	font-size: 20px;
+}
+button:hover{
+	color: var(--color-blue);
 	background-color: #fff;
 	transition: all 0.5s ease;
 	cursor: pointer;
+
 }
+button:hover a,
+button:hover i{
+	color: var(--color-blue);
+}
+
 p{
 	text-align: center;
 	margin-top: 17px;
@@ -75,8 +103,6 @@ p{
 	text-align: center;
 	margin-top: 17px; 
 }
-.row a{
-	text-decoration: none;
-	color: blue;
-	
+#text a{
+	text-decoration: underline;
 }
