@@ -57,6 +57,7 @@
                </div>
           </nav>
      </header>
+     
      <div class="Container">
           <main>
                <div class="articleMenu">
@@ -80,7 +81,7 @@
      <script src="../js/index.js"></script>
      <script>
           document.querySelector(".hamburger").addEventListener("click",()=>{
-               document.querySelector(".Container").classList.toggle("layer")
+               document.querySelector(".Container").classList.toggle("layer");
           })
           window.addEventListener("scroll",function(){
                document.querySelector(".Container").classList.toggle("layer",scrollY > 0)
