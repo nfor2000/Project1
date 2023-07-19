@@ -36,7 +36,6 @@ header {
      display: flex;
      justify-content: center;
      height: 10vh;
-     margin-bottom: 2rem;
 }
 
 .navbar {
@@ -66,7 +65,8 @@ header {
 }
 
 .navlink::after,
-.catlink::after {
+.catlink::after,
+.dropdown-btn::after{
      content: "";
      width: 100%;
      position: absolute;
@@ -81,12 +81,13 @@ header {
 }
 
 .navitem:hover .navlink::after,
-.catitem:hover .catlink::after {
+.catitem:hover .catlink::after,
+.dropdown:hover .dropdown-btn::after{
      transform: scaleX(1);
 }
 
 .navlink,
-.catlink {
+.catlink,.dropdown-btn {
      position: relative;
      color: var(--color-white);
      font-size: .7rem;
@@ -140,6 +141,7 @@ header {
      gap: 2rem;
      grid-template-columns: 70% auto;
      margin-bottom: 1rem;
+     margin-top: 1rem;
 }
 
 .section1 h2 {
@@ -381,6 +383,10 @@ footer h3{
      }
 
      .dropdown_content {
+          width: 100%;
+          left: 0;
+          display: flex;
+          flex-direction: column;
           top: 6vh;
           box-shadow: none;
           border: 1px solid var(--color-white);
