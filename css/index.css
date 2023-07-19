@@ -306,6 +306,23 @@ footer h3{
      font-size: 0.8rem;
 }
 
+
+.title{
+     position: absolute;
+     left: 1rem;
+     bottom: 0;
+     color: var(--color-white);
+}
+.underline{
+     display: block;
+     height: 5px;
+     width: 10rem;
+     background-color: var(--color-white);
+     margin-bottom: 1rem;
+     border-radius: 5px;
+}
+
+
 /* RESPONSIVENESS FOR MOBILE */
 @media screen and (max-width:1024px) {
      .navbar{
