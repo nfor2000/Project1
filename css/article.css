@@ -1,8 +1,13 @@
-
+header{
+     margin: 0;
+}
 .Container{
+     width: 100%;
+     max-width: 1024px;
      height: auto;
      display: grid;
      grid-template-columns: 70% auto;
+     margin: auto;
 }
 .articleMenu{
      position: relative;
@@ -30,6 +35,7 @@
 .image{
      width: 100%;
      height: 300px;
+     
 }
 aside{
      background-color: var(--color-blue);
@@ -70,26 +76,32 @@ main h2,p{
      color: var(--color-white);
 }
 @media screen  and (max-width:768px) {
+     
      .Container{
           display: block;
           padding: 20px;
           position: relative;
+          z-index: 0;
      }
      .articleMenu{
           display: flex;
      }
      aside{
-          position: absolute;
+          position: fixed;
           top: 0;
           left: 0;
           transform: translateX(100%);
           width: 100%;
           height: 100vh;
+          z-index: 0;
      }
      .close{
           display: block;
      }
      .active1{
           transform: translateX(0);
+     }
+     .layer{
+          z-index: -1;
      }
 }
