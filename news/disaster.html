@@ -11,102 +11,136 @@
 </head>
 
 <body>
-     <div class="header1">
-          <!-- DAY/TIME DISPLAY -->
-          <div class="date">
-               <span class="amount day"></span>
-               <span class="amount hour"></span>
-               <span class="amount minutes"></span>
-               <span class="amount seconds"></span>
-          </div>
-          <div class="logo">
-               BITSV NEWS
-          </div>
-          <!-- LOGIN AND SIGNUP -->
-          <div class="credential">
-               <a href="../login.html" class="login btn">Login</a>
-               <a href="../signup.html" class="signup btn">Signup</a>
-          </div>
-     </div>
-     <!-- NAVIGATIN MENU -->
-     <nav class="navbar">
-          <ul class="navmenu">
-               <li class="navitem">
-                    <a href="../index.html" class="navlink">HOME</a>
-               </li>
-               <li class="navitem">
-                    <a href="../about/board.html" class="navlink">BOARD</a>
-               </li>
-               <li class="navitem">
-                    <a href="../about/ourstory.html" class="navlink">OURSTORY</a>
-               </li>
-               <li class="navitem">
-                    <a href="../about/contact.html" class="navlink">CONTACT</a>
-               </li>
-               <li class="navitem">
-                    <a href="../about/article.html" class="navlink">ARTICLE</a>
-               </li>
-               <!-- DROPDOWN  -->
-               <li class="navitem dropdown">
-                    <a href="#" class="navlink">CATEGORIES</a>
-                    <ul class="dropdown_content">
-                         <li class="catitem">
-                              <a href="disaster.html" class="catlink">DISASTER</a>
-                         </li>
-                         <li class="catitem">
-                              <a href="survey/congress.html" class="catlink">CONGRESS</a>
-                         </li>
-                         <li class="catitem">
-                              <a href="survey/senate.html" class="catlink">SENATE</a>
-                         </li>
-                         <li class="catitem">
-                              <a href="survey/president.html" class="catlink">PRESIDENT</a>
-                         </li>
-                    </ul>
-               </li>
-          </ul>
-          <!-- MENU BUTTON  -->
-          <div class="hamburger">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-          </div>
-     </nav>
+     <header>
+          <nav class="navbar">
+               <div class="logo">
+                    BITSV NEWS
+               </div>
+               <ul class="navmenu">
+                    <li class="navitem">
+                         <a href="../index.html" class="navlink">HOME</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="../about/board.html" class="navlink">BOARD</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="../about/ourstory.html" class="navlink">OURSTORY</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="../about/contact.html" class="navlink">CONTACT</a>
+                    </li>
+                    <li class="navitem">
+                         <a href="../about/article.html" class="navlink">ARTICLE</a>
+                    </li>
+                    <!-- DROPDOWN  -->
+                    <li class="navitem dropdown">
+                         <a href="#" class="dropdown-btn">CATEGORIES</a>
+                         <ul class="dropdown_content">
+                              <li class="catitem">
+                                   <a href="../disaster.html" class="catlink">DISASTER</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="survey/congress.html" class="catlink">CONGRESS</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="survey/senate.html" class="catlink">SENATE</a>
+                              </li>
+                              <li class="catitem">
+                                   <a href="survey/president.html" class="catlink">PRESIDENT</a>
+                              </li>
+                         </ul>
+                    </li>
+               </ul>
+               <!-- MENU BUTTON  -->
+               <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+               </div>
+          </nav>
+     </header>
      <!-- the disaster page -->
      <div class="container">
           <div class="row">
-               <div class="col">
-                    <h1>Live disasters</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing eium eveniet vel </p>
-                    <button type="button">Explore</button>
+               <h3>DISASTERS</h3>
+               <span class="underline"></span>
+          </div>
+          <div class="row">
+               <div class="card card1" data-img="../img/disaster1.jpg">
+                    <h2>topic 1</h2>
+                    <p> Lorem ipsum dolor sit amet consecteta laudantium eveniet vel Lorem</p>
                </div>
-               <div class="col">
-                    <div class="card card1">
-                         <h2>topic 1</h2>
-                         <p> Lorem ipsum dolor sit amet consecteta laudantium eveniet vel Lorem</p>
+               <div class="card card2" data-img="../img/disaster2.jpg">
+                    <h2>topic 2</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur laudantium eveniet vel Lorem i</p>
 
-                    </div>
-                    <div class="card card2">
-                         <h2>topic 2</h2>
-                         <p> Lorem ipsum dolor sit amet consectetur laudantium eveniet vel Lorem i</p>
-                         
-                    </div>
-                    <div class="card card3">
-                         <h2>topic 3</h2>
-                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima l</p>
-                         
-                    </div>
-                    <div class="card card4">
-                         <h2>topic 4</h2>
-                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima la</p>
-                         
-                    </div>
+               </div>
+               <div class="card card3" data-img="../img/disaster3.jpg">
+                    <h2>topic 3</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima l</p>
+
+               </div>
+               <div class="card card4" data-img="../img/disaster4.jpg">
+                    <h2>topic 4</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima la</p>
+
                </div>
           </div>
 
      </div>
-    
+     <footer>
+          <div class="links">
+               <h3>Useful links</h3>
+               <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">ourstory</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">article</a></li>
+               </ul>
+
+          </div>
+          <div class="social_media">
+               <h3>follow us</h3>
+               <ul>
+                    <li>
+                         <a href="">
+                              <i class="bi bi-facebook"></i>
+                         </a>
+                    </li>
+                    <li>
+                         <a href="">
+                              <i class="bi bi-instagram"></i>
+                         </a>
+                    </li>
+                    <li>
+                         <a href="">
+                              <i class="bi bi-linkedin"></i>
+                         </a>
+                    </li>
+                    <li>
+                         <a href="">
+                              <i class="bi bi-twitter"></i>
+                         </a>
+                    </li>
+               </ul>
+          </div>
+          <div class="termsPolicy">
+               <h3>Terms and policy</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto harum quos nobis suscipit
+                    mollitia.</p>
+          </div>
+          <div class="sponsors">
+               <h3>Our sponsors</h3>
+               <ul>
+                    <li>Loremipsum.</li>
+                    <li>Loremipsum.</li>
+                    <li>Loremipsum.</li>
+                    <li>Loremipsum.</li>
+               </ul>
+          </div>
+     </footer>
      <script src="../js/index.js"></script>
+     <script src="../js/disaster.js"></script>
 </body>
 
 </html>
