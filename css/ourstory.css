@@ -1,5 +1,5 @@
 body{
-     background: linear-gradient(to top,var(--color-blue)70%,var(--color-white) 30%);
+     background: linear-gradient(to top,var(--color-2)70%,var(--color-white) 30%);
      height: auto;
      background-repeat: no-repeat;
 }
@@ -31,7 +31,8 @@ section >h2{
      margin-bottom: .2rem;
 }
 section > p{
-     margin: 1rem;
+     margin: 1px;
+     color: var(--color-white);
 }
 .underline{
      display: block;

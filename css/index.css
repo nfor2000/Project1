@@ -1,8 +1,8 @@
 :root {
      --color-white: hsl(0, 0%, 100%);
      --color-orange: hsl(44, 81%, 59%);
-     --color-dark: hsl(0, 0%, 29%);
-     --color-blue: rgb(2, 2, 43);
+     --color-2: rgba(7, 9, 17, 0.733);
+     --color-blue: rgb(0,0,0);
      --color-darkOp: hsl(0, 0%, 29%);
      --color-blueOp: rgba(2, 2, 43, 0.658);
      --transition: all 0.3s ease-in-out;
@@ -41,7 +41,7 @@ header {
 .navbar {
      position: fixed;
      top: 0;
-     width: 80vw;
+     width: 100%;
      display: flex;
      justify-content: space-between;
      height: 10vh;
@@ -135,7 +135,7 @@ header {
 
 .section1 {
      width: 100%;
-     max-width: 1024px;
+     max-width: 1400px;
      margin: auto;
      display: grid;
      gap: 2rem;
@@ -152,6 +152,12 @@ header {
 .container1 > h2{
      font-size: 3rem;
      text-align: left;
+}
+.container1 .underline{
+     background-color: #dad7d7;
+}
+.container1 .underline:nth-child(3){
+     width: 100px;
 }
 .container1 article{
      box-shadow: 0 1px 10px ;
@@ -178,8 +184,9 @@ header {
      border: 2px solid var(--color-blue);
 }
 .headline a{
-     color: var(--color-white);
+     color: var(--color-blue);
      transition: var(--transition);
+     font-size: 1rem;
 }
 .headline a:hover{
      text-decoration: underline;
@@ -237,25 +244,42 @@ header {
 }
 
 aside {
-     color: var(--color-white);
-}
-
-aside h2 {
-     color: var(--color-darkOp);
-}
-
-aside h3 {
-     font-size: 1rem;
-     color: var(--color-orange);
+     color: var(--color-blue);
 }
 
 .top-reports {
      margin: 0 0 1rem;
      border-bottom: 1px solid;
-     background-color: var(--color-blue);
+     background-color: var(--color-white);
+     box-shadow: 0 1px 10px;
      padding: 1rem;
 }
+.subscribe form{
+     width: 100%;
+    display: flex;
+}
+.subscribe form input{
+     padding: 0.4rem;
+     font-size: 0.8rem;
+     border: 1px solid var(--color-blue);
+}
+.subscribe input[type="email"]{
+     width: 80%;
+     outline: none;
+     border-right: none;
+}
 
+.subscribe input[type="submit"]{
+     border-left: none;
+     background-color: var(--color-blue);
+     color: var(--color-white);
+}
+.subscribe input[type="submit"]:hover{
+     border-left: none;
+     background-color: var(--color-2);
+     transition: var(--transition);
+     cursor: pointer;
+}
 .btn{
      display: block;
      width: 120px;

@@ -54,7 +54,7 @@ if (articles.length > 0) {
                AsideArticle.forEach(arti => {
                     arti.style.borderColor = "#fff"
                })
-               this.style.borderColor = "var(--color-orange)"
+               this.style.borderColor = "var(--color-blue)"
           })
 
      });

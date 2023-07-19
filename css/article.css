@@ -1,17 +1,17 @@
-header{
-     margin: 0;
-}
+
 .Container{
      width: 100%;
      max-width: 1024px;
-     height: auto;
      display: grid;
      grid-template-columns: 70% auto;
-     margin: auto;
+     margin:auto;
+}
+main{
+     background-color: var(--color-2);
+     color: var(--color-white);
 }
 .articleMenu{
      position: relative;
-     background-color: var(--color-blue);
      display: none;
      align-items: center;
      justify-content: right;
@@ -38,8 +38,8 @@ header{
      
 }
 aside{
-     background-color: var(--color-blue);
-     color: white;
+     background-color: var(--color-2);
+     color: var(--color-white);
      padding: 1rem;
      transition: var(--transition);
 }
@@ -63,16 +63,18 @@ main h2,p{
      margin-bottom: 1rem;
 }
 .Aside_article{
-     border: 1px solid var(--color-white);
+     border:2px solid var(--color-white);
      padding: .5rem;
      margin-bottom: 1rem;
      cursor:pointer;
+     background-color: transparent;
+     transition: var(--transition);
 }
 .Aside_article:hover{
-     border: 1px solid var(--color-orange);
+     transform: scale(1.1);
 }
 
-.Aside_article p,h3{
+.Aside_article p, .Aside_article h3{
      color: var(--color-white);
 }
 @media screen  and (max-width:768px) {
@@ -81,7 +83,7 @@ main h2,p{
           display: block;
           padding: 20px;
           position: relative;
-          z-index: 0;
+          z-index: 0pointer;
      }
      .articleMenu{
           display: flex;
