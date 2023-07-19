@@ -145,6 +145,7 @@ header {
      grid-template-columns: 70% auto;
      margin-bottom: 1rem;
      margin-top: 1rem;
+     padding: 1rem;
 }
 
 .section1 h2 {
@@ -255,6 +256,7 @@ header {
 
 aside {
      color: var(--color-blue);
+     margin-top: 4.8rem;
 }
 
 .top-reports {
