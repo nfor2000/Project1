@@ -5,12 +5,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EFEFEF;
+.main{
+  height: 80vh;
 }
 .slide-container{
   max-width: 1120px;
