@@ -3,17 +3,17 @@ let reports = [
      {
           "headline":"Senatarian Elections Around the corner",
           "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam molestiae laudantium eveniet?",
-          "image":"../img/disaster1.jpg"
+          "image":"img/disaster1.jpg"
      },
      {
           "headline":"War in Ukraine",
           "text":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aspernatur minima distinctio",
-          "image":"../img/president.jpg"
+          "image":"img/president.jpg"
      },
      {
           "headline":"AI predominance in the Tech Industry",
           "text":"sit amet consectetur adipisicing elit. Veniam aspernatur minima distinctio",
-          "image":"../img/img1.jpg"
+          "image":"img/img1.jpg"
      }
 ]
 let index= 0;
