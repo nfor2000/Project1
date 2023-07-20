@@ -59,7 +59,7 @@ if (articles.length > 0) {
 
      });
 }
-document.querySelector(".articleMenu img").addEventListener("click", function () {
+document.querySelector(".articleMenu span").addEventListener("click", function () {
      document.querySelector("aside").classList.toggle("active1")
 })
 document.querySelector(".close").addEventListener("click", function () {

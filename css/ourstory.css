@@ -45,12 +45,10 @@ section > p{
 
 @media screen and (max-width:768px) {
      body{
-          background: var(--color-blue) !important;
+          background: var(--color-2) !important;
      }
-     section{
-          padding: 1rem;
-     }
+    
      section p{
-          margin: 0;
+          margin: 1rem;
      }
 }

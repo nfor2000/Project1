@@ -254,7 +254,7 @@ header {
      cursor: pointer;
 }
 
-aside {
+.aside {
      color: var(--color-blue);
      margin-top: 4.8rem;
 }
