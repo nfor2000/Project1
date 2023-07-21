@@ -1,96 +1,160 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .footer_get_touch_outer {
-    margin: 40px 0;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  position: relative;
+  padding: 2rem;
+}
+
+.footer_get_touch_outer {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 820px;
+  margin: auto;
+  box-shadow: 0 1px 10px;
+}
+
+.get_form_inner {
+  display: block;
+  padding: 50px 40px;
+  background-color: var(--color-2);
+}
+
+input[type="text"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  color: var(--color-blue);
+  font-size: 0.8rem;
+  height: 42px;
+  padding: 0 0 0 20px;
+  width: 100%;
+  outline: 0;
+}
+
+.grid-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-full {
+  margin: 20px 0;
+}
+
+textarea {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  color: var(--color-blue);
+  padding: 12px 0 0 20px;
+  width: 100%;
+  font-size: 0.8rem;
+  outline: 0;
+  margin-bottom: 20px;
+}
+
+#error {
+  position: relative;
+  color: red;
+  display: block;
+  visibility: ri;
+}
+
+.get_form_inner_text h3 {
+  color: var(--color-white);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.submit {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid;
+  font-weight: 500;
+  padding: 10px 20px;
+  outline: 0;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+.submit:hover {
+  background-color: var(--color-white);
+  border-color: #ffffff;
+  color: var(--color-blue);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: none;
+}
+.modal{
+  height: 100px;
+  width: 250px;
+  background-color: var(--color-white);
+  padding:0.5rem 1rem;
+  display: grid;
+  grid-template-areas: "1 2" "3 3";
+  align-items: center;
+}
+.closemodal{
+  font-size: 2rem;
+  text-align: right;
+  cursor: pointer;
+}
+#error_message{
+  grid-area: 3;
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.show{
+  display: flex;
+}
+@media screen and (max-width:768px) {
   .container {
-    width: 100%;
-    max-width: 820px;
-    margin: auto;
-    box-shadow: 0 1px 10px;
+    box-shadow: none;
   }
-  
-  .get_form_inner {
-    display: block;
-    padding: 50px 40px;
-    background-color: var(--color-2);
-  }
-  input[type="text"], input[type="text"], input[type="email"], input[type="tel"] {
-    border: 1px solid #dbdbdb;
-    border-radius: 2px;
-    color:var(--color-blue);
-    font-size: 0.8rem;
-    height: 42px;
-    padding: 0 0 0 20px;
-    width: 100%;
-    outline: 0;
-  }
-  .grid-50-50 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  .grid-full {
-    margin: 20px 0;
-  }
-  textarea {
-    border: 1px solid #dbdbdb;
-    border-radius: 2px;
-    color: var(--color-blue);
-    padding: 12px 0 0 20px;
-    width: 100%;
-    font-size: 0.8rem;
-    outline: 0;
-    margin-bottom: 20px;
-  }
-  .get_form_inner_text h3 {
-    color:var(--color-white);
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  .submit{
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid;
-    font-weight: 500;
-    padding: 10px 20px;
-    outline: 0;
-    cursor: pointer;
-    color: var(--color-white);
-    transition: var(--transition);
-  }
-  .submit:hover {
-    background-color:var(--color-white);
-    border-color: #ffffff;
-    color:var(--color-blue);
-  }
-  ul {
-    list-style: none;
-    padding: 0;
+
+  .footer_get_touch_outer {
     margin: 0;
+    padding: 0;
   }
-  
-  @media screen and (max-width:768px){
-    .container{
-      box-shadow: none;
-    }
-    .footer_get_touch_outer {
-      margin: 0;
-    }
-    .grid-50-50{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .submit{
-      margin-left: 35%;
-    }
+
+  .grid-50-50 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
+
+  .submit {
+    margin-left: 35%;
+  }
+}
