@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height:auto;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/congress.jpg) center center/cover;
     display: grid;
     color: var(--color-white);
