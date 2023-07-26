@@ -3,6 +3,10 @@ h1{
     font-weight: 25px;
     text-align: center;
 }
+
+h2{
+    margin-bottom: 1rem;
+}
 main{
     width: 100%;
     max-width: 1024px;

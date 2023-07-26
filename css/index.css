@@ -313,6 +313,7 @@ footer {
      height: auto;
      display: grid;
      grid-template-columns: repeat(4, 1fr);
+     gap: 2rem;
      padding: 1rem;
      background-color: var(--color-blue);
      color: var(--color-white);

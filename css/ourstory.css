@@ -31,7 +31,7 @@ section >h2{
      margin-bottom: .2rem;
 }
 section > p{
-     margin: 1px;
+     margin: 1rem;
      color: var(--color-white);
 }
 .underline{

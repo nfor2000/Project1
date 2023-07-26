@@ -8,6 +8,9 @@ main{
     border: none;
     padding: 1rem;
 }
+h2{
+    margin-bottom: 1rem;
+}
 .sect{
     position: relative;
     height: 40vh;
