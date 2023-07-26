@@ -33,7 +33,7 @@ a {
 
 header {
      position: relative;
-     width: 100vw;
+     width: 100%;
      display: flex;
      justify-content: center;
      height: 10vh;
@@ -276,7 +276,7 @@ header {
 .subscribe form input {
      padding: 0.4rem;
      font-size: 0.8rem;
-     border: 1px solid var(--color-blue);
+     border: 1px solid var(--color-white);
 }
 
 .subscribe input[type="email"] {
